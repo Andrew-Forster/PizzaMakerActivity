@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PizzaMaker", "PizzaMaker\PizzaMaker.csproj", "{D15E91B2-7A7B-4A0B-A053-E6A907305944}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{2E9343B6-9C34-4312-8983-61D1765B63C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedModelsLibrary", "SharedModelsLibrary\SharedModelsLibrary.csproj", "{E923765E-05CC-462B-96FF-DA1E12106696}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D15E91B2-7A7B-4A0B-A053-E6A907305944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D15E91B2-7A7B-4A0B-A053-E6A907305944}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D15E91B2-7A7B-4A0B-A053-E6A907305944}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D15E91B2-7A7B-4A0B-A053-E6A907305944}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E9343B6-9C34-4312-8983-61D1765B63C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E9343B6-9C34-4312-8983-61D1765B63C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E9343B6-9C34-4312-8983-61D1765B63C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E9343B6-9C34-4312-8983-61D1765B63C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E923765E-05CC-462B-96FF-DA1E12106696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E923765E-05CC-462B-96FF-DA1E12106696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E923765E-05CC-462B-96FF-DA1E12106696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E923765E-05CC-462B-96FF-DA1E12106696}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A79B269C-021F-4C44-BB31-1B877DEABC68}
+	EndGlobalSection
+EndGlobal
