@@ -9,6 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="App_Data\PizzaOrders.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="App_Data\PizzaOrders.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Services\Services.csproj" />
     <ProjectReference Include="..\SharedModelsLibrary\SharedModelsLibrary.csproj" />
   </ItemGroup>

@@ -127,7 +127,8 @@ namespace PizzaMaker
                 btnCheckout.Visible = true;
                 btnSave.Visible = true;
                 lblPriceAmount.Visible = true;
-                lblPriceAmount.Text = $"Total Price: {pizzaOrder.TotalPrice.ToString()}";
+                pizzaOrder.TotalPrice = businessLayer.CalculateTotalPrice(pizzaOrder);
+                lblPriceAmount.Text = $"$ {pizzaOrder.TotalPrice.ToString()}";
             }
 
         }
@@ -135,6 +136,9 @@ namespace PizzaMaker
         private void PizzaCheckout_OnClick(object sender, EventArgs e)
         {
             FrmPizzaConfirm frmPizzaConfirm = new FrmPizzaConfirm(pizzaOrders);
+
+            frmPizzaConfirm.ShowPizza();
+            frmPizzaConfirm.ShowDialog();
         }
 
         private void ResetForm_OnClick(object sender, EventArgs e)
@@ -142,8 +146,8 @@ namespace PizzaMaker
             // Andrew Forster
 
             txtPizzaFor.Text = string.Empty;
-            
-            foreach(Control control in grpIngredients.Controls)
+
+            foreach (Control control in grpIngredients.Controls)
             {
                 if (control is CheckBox)
                 {
@@ -165,6 +169,11 @@ namespace PizzaMaker
             }
 
             dtDeliveryTime.Value = DateTime.Now;
+        }
+
+        private void SavePizza_OnClick(object sender, EventArgs e)
+        {
+
         }
     }
 }

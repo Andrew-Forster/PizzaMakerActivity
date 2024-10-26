@@ -384,9 +384,9 @@
             // 
             btnReset.BackColor = Color.FromArgb(255, 192, 192);
             btnReset.FlatStyle = FlatStyle.Popup;
-            btnReset.Location = new Point(268, 392);
+            btnReset.Location = new Point(517, 132);
             btnReset.Name = "btnReset";
-            btnReset.Size = new Size(233, 48);
+            btnReset.Size = new Size(274, 46);
             btnReset.TabIndex = 9;
             btnReset.Text = "Reset Form";
             btnReset.UseVisualStyleBackColor = false;
@@ -402,14 +402,15 @@
             btnSave.TabIndex = 10;
             btnSave.Text = "Save Pizza";
             btnSave.UseVisualStyleBackColor = false;
+            btnSave.Click += SavePizza_OnClick;
             // 
             // btnCheckout
             // 
             btnCheckout.BackColor = Color.FromArgb(255, 224, 192);
             btnCheckout.FlatStyle = FlatStyle.Popup;
-            btnCheckout.Location = new Point(517, 132);
+            btnCheckout.Location = new Point(264, 392);
             btnCheckout.Name = "btnCheckout";
-            btnCheckout.Size = new Size(274, 46);
+            btnCheckout.Size = new Size(237, 48);
             btnCheckout.TabIndex = 11;
             btnCheckout.Text = "Checkout";
             btnCheckout.UseVisualStyleBackColor = false;

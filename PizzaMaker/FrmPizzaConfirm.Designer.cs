@@ -29,19 +29,32 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPizzaConfirm));
-            btnPizzaConfirm = new Button();
+            btnPizzaSave = new Button();
+            lblPizzaOrder = new Label();
             SuspendLayout();
             // 
-            // btnPizzaConfirm
+            // btnPizzaSave
             // 
-            btnPizzaConfirm.BackColor = Color.FromArgb(192, 192, 255);
-            btnPizzaConfirm.FlatStyle = FlatStyle.Popup;
-            btnPizzaConfirm.Location = new Point(556, 406);
-            btnPizzaConfirm.Name = "btnPizzaConfirm";
-            btnPizzaConfirm.Size = new Size(273, 46);
-            btnPizzaConfirm.TabIndex = 0;
-            btnPizzaConfirm.Text = "Confirm Pizza";
-            btnPizzaConfirm.UseVisualStyleBackColor = false;
+            btnPizzaSave.BackColor = Color.FromArgb(192, 192, 255);
+            btnPizzaSave.FlatStyle = FlatStyle.Popup;
+            btnPizzaSave.Location = new Point(556, 406);
+            btnPizzaSave.Name = "btnPizzaSave";
+            btnPizzaSave.Size = new Size(273, 46);
+            btnPizzaSave.TabIndex = 0;
+            btnPizzaSave.Text = "Save Pizza";
+            btnPizzaSave.UseVisualStyleBackColor = false;
+            btnPizzaSave.Click += PizzaSave_OnClick;
+            // 
+            // lblPizzaOrder
+            // 
+            lblPizzaOrder.AutoSize = true;
+            lblPizzaOrder.BackColor = Color.Black;
+            lblPizzaOrder.ForeColor = SystemColors.ButtonFace;
+            lblPizzaOrder.Location = new Point(17, 18);
+            lblPizzaOrder.Name = "lblPizzaOrder";
+            lblPizzaOrder.Size = new Size(50, 20);
+            lblPizzaOrder.TabIndex = 1;
+            lblPizzaOrder.Text = "label1";
             // 
             // FrmPizzaConfirm
             // 
@@ -50,14 +63,18 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(841, 464);
-            Controls.Add(btnPizzaConfirm);
+            Controls.Add(lblPizzaOrder);
+            Controls.Add(btnPizzaSave);
+            DoubleBuffered = true;
             Name = "FrmPizzaConfirm";
             Text = "Pizza Confirm";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private Button btnPizzaConfirm;
+        private Button btnPizzaSave;
+        private Label lblPizzaOrder;
     }
 }
